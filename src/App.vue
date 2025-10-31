@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
+import MyWelcome from './components/MyWelcome.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
 </script>
@@ -15,6 +16,7 @@ import Navbar from './components/Navbar.vue';
   </header>
 
   <main>
+    <MyWelcome />
     <!-- <TheWelcome /> -->
   </main>
 </template>
