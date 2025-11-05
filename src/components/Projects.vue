@@ -65,21 +65,42 @@
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
+        .projects-heading {
+            font-size: 24px;
+        }
 
+        .projects-container, .project {
+            display: block;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+        .projects-heading {
+            font-size: 32px;
+        }
 
+        h2 {
+            font-size: 24px;
+        }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     }
 

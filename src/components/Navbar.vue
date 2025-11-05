@@ -33,6 +33,7 @@
     }
 
     .nav-title {
+        /* font-size: 20px; */
         width: 75%;
         padding-left: 1%;
     }
@@ -79,17 +80,23 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /* img {
+      padding-top: 2.5%;  
+    } */
 
+    ul {
+        margin-right: 25px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 }
 
