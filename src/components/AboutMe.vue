@@ -79,21 +79,64 @@
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
+        .about-heading {
+            font-size: 24px;
+        }
 
+        h2 {
+            font-size: 20px;
+        }
+
+        .about-section {
+            display: block;
+            text-align: center;
+        }
+
+        .about-subsection {
+            display: block;
+            width: 80%;
+            margin-bottom: 15%;
+        }
+
+        .skills-container {
+            display: block;
+            width: 95vw;
+            /* padding: 0 10%; */
+        }
+
+        .skill {
+            padding: 5px 5px;
+            margin: 10px;
+        }
+
+        .skill-list {
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+        .about-heading {
+            font-size: 32px;
+        }
 
+        h2 {
+            font-size: 24px;
+        }
+
+        .skill-list {
+            padding: 0 15%;
+        }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     }
 

@@ -88,21 +88,38 @@
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
+        .contact-heading {
+            font-size: 24px;
+        }
 
+        .contact-text {
+            font-size: 18px;
+            padding: 0 8%;
+        }
+
+        form {
+            margin: 0 5%;
+        }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+        .contact-heading {
+            font-size: 32px;
+        }
 
+        .contact-text {
+            font-size: 24px;
+        }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     }
 
