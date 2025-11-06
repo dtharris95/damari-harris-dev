@@ -17,7 +17,8 @@
                 </div>
             </div>
             <div class="project">
-                <img src="@/assets/city-vet-icon.png" alt=""></img>
+                <a></a>
+                <img id="city-vet" src="@/assets/city-vet-icon.png" alt=""></img>
                 <div class="project-info">
                     <h2>City Veterinary Hospital (COMING SOON)</h2>
                     <p>Template veterinarian website serving as proof-of-concept for potential veterinarian clinic clients.</p>
@@ -73,6 +74,10 @@
             display: block;
         }
 
+        .project-info {
+            padding: 0;
+        }
+
         h2 {
             font-size: 20px;
             text-align: center;
@@ -84,9 +89,22 @@
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) and (max-width: 767px) {
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
         .projects-heading {
             font-size: 32px;
+            margin-bottom: 7%;
+        }
+
+        .projects-container, .project, .project-info {
+            display: block;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .project-info {
+            padding: 0 15%;
+            margin: 5%;
         }
 
         h2 {
@@ -96,12 +114,34 @@
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .projects-heading {
+            /* font-size: 32px; */
+            margin-bottom: 7%;
+        }
 
+        .projects-container, .project, .project-info {
+            display: block;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .project-info {
+            padding: 0 15%;
+            margin: 5%;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+        #city-vet {
+            height: 165px;
+            width: 625px;
+        }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */

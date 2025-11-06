@@ -64,45 +64,57 @@
     }
 
      /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .navbar {
-        width: 100vw;
+    @media only screen and (max-width: 600px) {
+        .navbar {
+            width: 100vw;
+        }
+
+        .nav-title {
+            font-size: 12px;
+            padding: 0 3%;
+        }
+
+        ul {
+            display: none;
+        }
     }
 
-    .nav-title {
-        font-size: 12px;
-        padding: 0 3%;
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
+        img {
+        padding-top: 2.5%;  
+        }
+
+        nav {
+            padding-right: 3%;
+        }
     }
 
-    ul {
-        display: none;
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        img {
+            padding-top: 2%;
+        }
+
+        nav {
+            padding-right: 5%;
+        }
     }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-    /* img {
-      padding-top: 2.5%;  
-    } */
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        img {
+            padding-top: 1.5%;
+        }
 
-    ul {
-        margin-right: 25px;
+        nav {
+            padding-right: 7%;
+        }
     }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-} 
+    } 
 
 </style>
