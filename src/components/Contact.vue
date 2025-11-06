@@ -50,7 +50,8 @@
         color: #414B3B;
         border: 15px #D9D9D9 solid;
         margin: 0 15%;
-        padding: 15px 50px;
+        /* padding: 15px 50px; */
+        padding: 2% 5%;
         text-align: left;
     }
 
@@ -59,7 +60,7 @@
     }
 
     input[type=text], textarea {
-        width: 100%;
+        width: 95%;
         padding: 15px 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -103,24 +104,29 @@
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) and (max-width: 767px) {
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
         .contact-heading {
             font-size: 32px;
         }
 
         .contact-text {
             font-size: 24px;
+            padding: 0 7%;
         }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+        .contact-text {
+            padding: 0 8%;
+        }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+        .contact-text {
+            padding: 0 12% 2% 12%;
+        }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */

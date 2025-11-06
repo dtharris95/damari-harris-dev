@@ -8,11 +8,9 @@
         <div class="about-section">
             <div class="about-subsection">
                 <h2>Get to Know Me!</h2>
-                <p>Originally from Columbus, OH, in 2023 I earned my Associate of Applied  Sciences in Computer Science from Columbus State Community College,  majoring in Web Development.
-                    <br></br><br></br>
-                    Now based in Cleveland, OH, I have spent the last six years thriving in my role at Amazon and am now excited to embark on my next chapter in Web Development.
-                    <br></br><br></br>
-                    I’m open to job opportunities where I can learn, grow, and collaborate, all while making a meaningful impact.</p>
+                <p class="about-text">Originally from Columbus, OH, in 2023 I earned my Associate of Applied  Sciences in Computer Science from Columbus State Community College,  majoring in Web Development.</p>
+                    <p class="about-text">Now based in Cleveland, OH, I have spent the last six years thriving in my role at Amazon and am now excited to embark on my next chapter in Web Development.</p>
+                    <p class="about-text">I’m open to job opportunities where I can learn, grow, and collaborate, all while making a meaningful impact.</p>
             </div>
             <div class="skills-container">
                 <h2>Skills</h2>
@@ -112,17 +110,74 @@
         .skill-list {
             align-items: center;
             justify-content: space-between;
+            padding: 0 10%;
         }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) and (max-width: 767px) {
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
         .about-heading {
             font-size: 32px;
         }
 
+        .about-section {
+            display: block;
+            padding: 0;
+        }
+
+        .about-subsection {
+            text-align: center;
+            width: 100vw;
+            padding: 0%;
+            margin: 10% 0;
+        }
+
+        .skills-container {
+            text-align: center;
+            padding: 0;
+            width: 100vw;
+        }
+
+        .skill-list {
+            padding: 0 15%;
+        }
+
+        .about-text {
+            margin: 20% 0;   
+        }
+
         h2 {
             font-size: 24px;
+        }
+
+        p {
+            padding: 0 10%;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .about-section {
+            display: block;
+            padding: 0;
+        }
+
+        .about-subsection {
+            text-align: center;
+            width: 100vw;
+            padding: 0%;
+            margin: 10% 0;
+        }
+
+        .about-text {
+            padding: 0 10%;
+            text-align: left;
+        }
+
+        .skills-container {
+            text-align: center;
+            padding: 0;
+            width: 100vw;
         }
 
         .skill-list {
@@ -130,14 +185,19 @@
         }
     }
 
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    }
-
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .about-subsection {
+            width: 30%;
+        }
 
+        .skills-container {
+            width: 30%;
+        }
+
+        .skill {
+            margin: 10px;
+        }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
