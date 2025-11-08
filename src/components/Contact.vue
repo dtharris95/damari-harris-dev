@@ -4,7 +4,7 @@
 
 <template>
     <div class="contact-wrapper">
-        <h1 class="contact-heading">CONTACT</h1>
+        <h1 class="contact-heading">CONTACT</h1><hr>
         <p class="contact-text">I would love to hear from you! Please fill out the form below, and I will get back to you as soon as possible.</p>
 
         <form action="https://api.web3forms.com/submit" method="POST">
@@ -85,12 +85,13 @@
         color: #D9D9D9;
         font-weight: bold;
         cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         .contact-heading {
-            font-size: 24px;
+            font-size: 28px;
         }
 
         .contact-text {
