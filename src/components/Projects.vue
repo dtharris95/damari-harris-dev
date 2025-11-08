@@ -5,33 +5,38 @@
 <template>
     <div class="project-wrapper">
         <div>
-            <h1 class="projects-heading">PROJECTS</h1>
+            <h1 class="projects-heading">PROJECTS</h1><hr>
         </div>
+        <!-- HARRIS KITCHEN TABLE -->
         <div class="projects-container">
             <div class="project">
-                <a href="https://harriskitchentable.com" target="_blank"><img src="@/assets/HKTIcon.png" alt=""></img></a>
+                <a href="https://harriskitchentable.com" target="_blank"><img src="@/assets/HKTIcon.webp" alt="Image of my website, Harris Kitchen Table"></img></a>
                 <div class="project-info">
                     <h2>Harris Kitchen Table</h2>
                     <p>Full-stack template website serving as proof-of-concept for potential freelance restaurant clients.</p>
                     <p>React | JavaScript | HTML | CSS | PocketBase</p>
                 </div>
             </div>
+            <!-- HINGE TO HARRIS -->
+            <!-- <div class="project">
+                <a></a>
+                <img src="@/assets/city-vet-icon.webp" alt=""></img>
+                <div class="project-info">
+                    <h2>Hinge to Harris</h2>
+                    <p>​My wedding website with details including the date, location, a form to RSVP, and a link to the registry, and details about the couple.​</p>
+                    <p>WordPress | ouRSVP</p>
+                </div>
+            </div> -->
+            <!-- CITY VETERINARY HOSPITAL -->
             <div class="project">
                 <a></a>
-                <img id="city-vet" src="@/assets/city-vet-icon.png" alt=""></img>
+                <img id="city-vet" src="@/assets/city-vet-icon.webp" alt="Fictional logo for my project, City Veterinary Hospital"></img>
                 <div class="project-info">
                     <h2>City Veterinary Hospital (COMING SOON)</h2>
                     <p>Template veterinarian website serving as proof-of-concept for potential veterinarian clinic clients.</p>
                     <p>SvelteKit | JavaScript | HTML | CSS</p>
                 </div>
             </div>
-            <!-- <div class="project">
-                <img src="@/assets/HKTIcon.png" alt=""></img>
-                <div class="project-info">
-                    <h2>Project Names</h2>
-                    <p>Y'all wrong fam, THIS project rules.</p>
-                </div>
-            </div> -->
         </div>
     </div>
 </template>
@@ -64,10 +69,14 @@
         color: #414B3B;
     }
 
+    hr {
+        border: 2px solid #414B3B;
+    }
+
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         .projects-heading {
-            font-size: 24px;
+            font-size: 28px;
         }
 
         .projects-container, .project {
@@ -75,16 +84,12 @@
         }
 
         .project-info {
-            padding: 0;
+            padding: 0 2%;
+            text-align: center;
         }
 
         h2 {
             font-size: 20px;
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
         }
     }
 
@@ -127,7 +132,7 @@
         }
 
         .project-info {
-            padding: 0 15%;
+            padding: 0 20%;
             margin: 5%;
         }
 

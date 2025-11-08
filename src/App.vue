@@ -32,8 +32,8 @@ const scrollToSection = (sectionName) => {
   </header>
 
   <main>
-    <section ref="homeSection"><MyWelcome /></section>
-    <section ref="aboutSection"><AboutMe /></section>
+    <section ref="homeSection"><MyWelcome @scroll-to="scrollToSection" /></section>
+    <section ref="aboutSection"><AboutMe @scroll-to="scrollToSection" /></section>
     <section ref="projectsSection"><Projects /></section>
     <section ref="contactSection"><Contact /></section>
   </main>

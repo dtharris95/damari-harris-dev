@@ -4,16 +4,16 @@
 
 <template>
     <div class="navbar">
-        <img src="@/assets/damari-icon.png" alt="Image here" />
+        <img src="@/assets/my-icon.webp" alt="Profile photo" />
         <div class="nav-title">
             <h1>Damari Harris</h1>
         </div>
         <nav>
             <ul>
-                <button @click="$emit('scroll-to', 'home')">Home</button>
-                <button @click="$emit('scroll-to', 'about')">About</button>
-                <button @click="$emit('scroll-to', 'projects')">Projects</button>
-                <button @click="$emit('scroll-to', 'contact')">Contact</button>
+                <li @click="$emit('scroll-to', 'home')">Home</li>
+                <li @click="$emit('scroll-to', 'about')">About</li>
+                <li @click="$emit('scroll-to', 'projects')">Projects</li>
+                <li @click="$emit('scroll-to', 'contact')">Contact</li>
             </ul>
         </nav>
     </div>
@@ -33,7 +33,7 @@
     }
 
     .nav-title {
-        /* font-size: 20px; */
+        font-size: 15px;
         width: 75%;
         padding-left: 1%;
     }
@@ -42,18 +42,17 @@
         display: flex;
         list-style-type: none;
         justify-content: space-between;
-        padding: 5%;
+        padding: 6% 0;
     }
 
     img {
         width: 50px;
         height: 50px;
-        /* border-radius: 5px; */
-        padding-top: 1%;
-        padding-left: 2%;
+        padding-top: 0.75%;
+        padding-left: 4%;
     }
 
-    button {
+    li {
         color: #D9D9D9;
         font-size: 16px;
         background: none;
@@ -61,17 +60,20 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         cursor: pointer;
+        padding: 0 2%;
+        padding-right: 1%;
     }
 
      /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         .navbar {
             width: 100vw;
+            position: absolute;
         }
 
         .nav-title {
-            font-size: 12px;
-            padding: 0 3%;
+            font-size: 10px;
+            padding: 1% 3%;
         }
 
         ul {
@@ -93,7 +95,8 @@
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) and (max-width: 991px) {
         img {
-            padding-top: 2%;
+            padding-top: 1.5%;
+            padding-left: 2%;
         }
 
         nav {
