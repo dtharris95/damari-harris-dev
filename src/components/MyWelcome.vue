@@ -28,7 +28,7 @@
 <style scoped>
     .welcome-wrapper {
         display: flex;
-        padding: 18% 0% 17% 0;
+        padding: 15% 0% 15% 0;
         text-align: center;
     }
 
@@ -37,9 +37,8 @@
         background-color: #414B3B;
         height: 150px;
         width: 75px;
-        margin-top: 50px;
+        margin-top: 80px;
         padding-top: 20px;
-        /* text-align: center;     */
     }
 
     .logo-links-responsive {
@@ -86,7 +85,7 @@
     @media only screen and (max-width: 600px) {
         .welcome-wrapper {
             display: block;
-            padding: 45% 0 35% 0;
+            padding: 45% 0 30% 0;
         }
 
         .intro {
@@ -110,7 +109,8 @@
             grid-template-columns: auto auto;
             background-color: #414B3B;
             align-items: center;
-            margin: 5% 38%;
+            margin: 5% 40%;
+            padding-top: 3px;
         }
 
         #linkedin-logo {
@@ -129,7 +129,7 @@
         }
 
         #submit {
-            padding: 10px 40px;
+            padding: 10px 45px;
         }
     }
 
