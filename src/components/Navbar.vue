@@ -38,6 +38,10 @@
         padding-left: 1%;
     }
 
+    nav {
+        padding-right: 8%;
+    }
+
     ul {
         display: flex;
         list-style-type: none;
