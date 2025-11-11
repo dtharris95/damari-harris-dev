@@ -75,10 +75,13 @@
         margin: 5px 0;
         padding: 15px 45px;
         background-color: #414B3B;
+        border: 1px solid #414B3B;
+        border-radius: 3px;
         color: #D9D9D9;
         font-weight: bold;
         cursor: pointer;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
     }
 
     /* Extra small devices (phones, 600px and down) */
@@ -89,7 +92,7 @@
         }
 
         .intro {
-            font-size: 28px;
+            font-size: 36px;
             text-align: center;
             padding: 0 15%;
         }
@@ -111,6 +114,7 @@
             align-items: center;
             margin: 5% 40%;
             padding-top: 3px;
+            border-radius: 3px;
         }
 
         #linkedin-logo {
