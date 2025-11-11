@@ -49,6 +49,7 @@
         background-color: #D9D9D9;
         color: #414B3B;
         border: 15px #D9D9D9 solid;
+        border-radius: 5px;
         margin: 0 15%;
         /* padding: 15px 50px; */
         padding: 2% 5%;
@@ -63,6 +64,8 @@
         width: 95%;
         padding: 15px 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 1px solid #414B3B;
+        border-radius: 5px;
     }
 
     textarea {
@@ -82,10 +85,13 @@
         margin: 5px 0;
         padding: 10px 45px;
         background-color: #414B3B;
+        border: #414B3B;
+        border-radius: 5px;
         color: #D9D9D9;
         font-weight: bold;
         cursor: pointer;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
     }
 
     /* Extra small devices (phones, 600px and down) */

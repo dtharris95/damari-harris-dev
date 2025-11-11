@@ -82,6 +82,7 @@
         color: #414B3B;
         font-weight: bold;
         padding: 10px 15px;
+        border-radius: 3px;
     }
 
     #linkedin-link {
@@ -94,10 +95,13 @@
         margin: 5px 0;
         padding: 10px 45px;
         background-color: #D9D9D9;
+        border: 1px solid #D9D9D9;
+        border-radius: 5px;
         color: #414B3B;
         font-weight: bold;
         cursor: pointer;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
     }
 
     /* Extra small devices (phones, 600px and down) */
@@ -130,6 +134,7 @@
         .skill {
             padding: 5px 5px;
             margin: 10px;
+            font-size: 12px;
         }
 
         .skill-list {
