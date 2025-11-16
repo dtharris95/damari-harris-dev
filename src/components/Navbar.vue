@@ -25,11 +25,12 @@
         left: 0;
         margin: 0;
         display: flex;
-        border-bottom: 2px #D9D9D9 solid;
+        /* border-bottom: 2px #D9D9D9 solid; */
         position: fixed;
         width: 100vw;
         color: #D9D9D9;
         background-color: #414B3B;
+        box-shadow: 0px 10px 5px gray;
     }
 
     .nav-title {
