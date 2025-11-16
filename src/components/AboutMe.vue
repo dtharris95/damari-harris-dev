@@ -46,6 +46,8 @@
         width: 100vw;
         max-width: 100%;
         color: #D9D9D9;
+        box-shadow: 0px 10px 5px gray,
+        0px -10px 5px gray;
     }
 
     .about-heading {

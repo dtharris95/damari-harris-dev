@@ -1,5 +1,22 @@
 <script setup>
+    import { onMounted, onUnmounted, ref } from 'vue';
+    const isVisible = ref(false);
 
+    const handleScroll = () => {
+        if (window.pageYOffset > 500) {
+            isVisible.value = true;
+        } else {
+            isVisible.value = false;
+        }
+    };
+
+    onMounted(() => {
+        window.addEventListener("scroll", handleScroll)
+    });
+
+    onUnmounted(() => {
+        window.addEventListener("scroll", handleScroll)
+    });
 </script>
 
 <template>
@@ -22,6 +39,9 @@
             <a href="https://github.com/dtharris95" target="_blank"><img id="github-logo" src="@/assets/github.png" alt="github logo" /></a>
             <!-- </div> -->
         </div>
+        <div class="top-btn-container">
+            <button v-if="isVisible" @click="$emit('scroll-to', 'home')" type="submit" class="top-btn">Top ^</button>
+        </div>
     </div>
 </template>
 
@@ -30,6 +50,7 @@
         display: flex;
         padding: 15% 0% 15% 0;
         text-align: center;
+        box-shadow: 0px 10px 5px purple;
     }
 
     .logo-links {
@@ -52,6 +73,28 @@
     /* #github-logo {
 
     } */
+
+    /* .top-btn-container {
+        align-items: right;
+    } */
+
+    .top-btn {
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        padding: 15px 5px;
+        color: #D9D9D9;
+        border: 3px solid black;
+        background-color: black;
+        border-radius: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+    }
+
+    .top-btn:hover {
+        color: black;
+        background-color: white;
+    }
 
     .hello-world-container {
         color: #414B3B;

@@ -32,6 +32,7 @@
         padding: 10% 0%;
         color: #D9D9D9;
         text-align: center;
+        box-shadow: 0px -10px 5px gray;;
     }
 
     .contact-heading {
