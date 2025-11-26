@@ -93,7 +93,7 @@
         font-weight: bolder;
     }
 
-        #submit {
+    #submit {
         margin: 5px 0;
         padding: 10px 45px;
         background-color: #D9D9D9;
@@ -104,6 +104,13 @@
         cursor: pointer;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 14px;
+        box-shadow: 0px 2px 5px;
+    }
+
+    #submit:hover {
+        background-color: #414B3B;
+        color: #D9D9D9;
+        border: 2px solid #D9D9D9;
     }
 
     /* Extra small devices (phones, 600px and down) */
@@ -172,10 +179,6 @@
 
         .skill-list {
             padding: 0 15%;
-        }
-
-        .about-text {
-            margin: 20% 0;   
         }
 
         h2 {
