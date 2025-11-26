@@ -10,23 +10,23 @@
         <!-- HARRIS KITCHEN TABLE -->
         <div class="projects-container">
             <div class="project">
-                <a href="https://harriskitchentable.com" target="_blank"><img src="@/assets/HKTIcon.webp" alt="Image of my website, Harris Kitchen Table"></img></a>
+                <a class="zoom-in" href="https://harriskitchentable.com" target="_blank"><img src="@/assets/HKTIcon.webp" alt="Image of my website, Harris Kitchen Table"></img></a>
                 <div class="project-info">
                     <h2>Harris Kitchen Table</h2>
                     <p>Full-stack template website serving as proof-of-concept for potential freelance restaurant clients.</p>
-                    <p>React | JavaScript | HTML | CSS | PocketBase</p>
+                    <p><i>React | JavaScript | HTML | CSS | PocketBase</i></p>
                 </div>
             </div>
             <!-- HINGE TO HARRIS -->
-            <!-- <div class="project">
+            <div class="project">
                 <a></a>
-                <img src="@/assets/city-vet-icon.webp" alt=""></img>
+                <img id="hinge-img" src="@/assets/hinge-to-harris.webp" alt="Image of my wedding website, titled Hinge to Harris"></img>
                 <div class="project-info">
-                    <h2>Hinge to Harris</h2>
+                    <h2>Hinge to Harris (COMING SOON)</h2>
                     <p>​My wedding website with details including the date, location, a form to RSVP, and a link to the registry, and details about the couple.​</p>
-                    <p>WordPress | ouRSVP</p>
+                    <p><i>WordPress | ouRSVP</i></p>
                 </div>
-            </div> -->
+            </div>
             <!-- CITY VETERINARY HOSPITAL -->
             <div class="project">
                 <a></a>
@@ -34,7 +34,7 @@
                 <div class="project-info">
                     <h2>City Veterinary Hospital (COMING SOON)</h2>
                     <p>Template veterinarian website serving as proof-of-concept for potential veterinarian clinic clients.</p>
-                    <p>SvelteKit | JavaScript | HTML | CSS</p>
+                    <p><i>SvelteKit | JavaScript | HTML | CSS</i></p>
                 </div>
             </div>
         </div>
@@ -69,8 +69,17 @@
         color: #414B3B;
     }
 
+    .zoom-in:hover {
+        transform: scale(1.1);
+    }
+
     hr {
         border: 2px solid #414B3B;
+    }
+
+    #hinge-img {
+        height: 150px;
+        /* width: 330px; */
     }
 
     /* Extra small devices (phones, 600px and down) */
@@ -97,6 +106,9 @@
     @media only screen and (min-width: 601px) and (max-width: 767px) {
         .projects-heading {
             font-size: 32px;
+        }
+
+        hr {
             margin-bottom: 7%;
         }
 
@@ -119,15 +131,12 @@
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .projects-heading {
-            /* font-size: 32px; */
+        hr {
             margin-bottom: 7%;
         }
-
+        
         .projects-container, .project, .project-info {
             display: block;
-            padding: 0;
-            margin: 0;
             text-align: center;
         }
 

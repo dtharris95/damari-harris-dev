@@ -29,6 +29,7 @@
             <h1 class="intro">HELLO WORLD, I'M DAMARI</h1>
             <p class="intro-text">I'm a front-end Web Developer who enjoys bringing ideas to life! I'm eager to apply my skills and grow continuously through real-world opportunities.</p>
             <button @click="$emit('scroll-to', 'projects')" type="submit" id="submit">PROJECTS</button>
+            <button @click="$emit('scroll-to', 'services')" type="submit" id="submit">SERVICES</button>
         </div>
         <!-- Logos placement on mobile devices -->
         <div class="logo-links-responsive">
@@ -57,7 +58,7 @@
         left: 0;
         background-color: #414B3B;
         height: 150px;
-        width: 75px;
+        width: 85px;
         margin-top: 80px;
         padding-top: 20px;
     }
@@ -69,14 +70,6 @@
     #linkedin-logo {
         padding-bottom: 20px;
     }
-
-    /* #github-logo {
-
-    } */
-
-    /* .top-btn-container {
-        align-items: right;
-    } */
 
     .top-btn {
         position: fixed;
@@ -115,7 +108,7 @@
     }
 
     #submit {
-        margin: 5px 0;
+        margin: 1%;
         padding: 15px 45px;
         background-color: #414B3B;
         border: 1px solid #414B3B;
@@ -125,6 +118,13 @@
         cursor: pointer;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 14px;
+    }
+
+    #submit:hover {
+        background-color: #D9D9D9;
+        color: #414B3B;
+        border: 2px solid #414B3B;
+        box-shadow: 0px 2px 5px;
     }
 
     /* Extra small devices (phones, 600px and down) */
@@ -177,17 +177,18 @@
 
         #submit {
             padding: 10px 45px;
+            margin: 1%;
         }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 601px) and (max-width: 767px) {
         .welcome-wrapper {
-            padding: 15% 0 5% 0;
+            padding: 25% 0 15% 0;
         }
 
         .hello-world-container {
-            padding-right: 10%;
+            /* padding-right: 10%; */
         }
 
         .intro {
@@ -195,12 +196,12 @@
         }
 
         .intro-text {
-            padding: 0 5%;
+            padding: 1% 5%;
             font-size: 24px
         }
 
         .logo-links {
-            margin: 7% 0;
+            margin: 12% 0;
             height: 120px;
         }
 
@@ -215,12 +216,16 @@
             height: 50px;
             width: 50px;
         }
+
+        #submit {
+            margin: 1%;
+        }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) and (max-width: 991px) {
         .welcome-wrapper {
-            padding: 40% 0 30% 0;
+            padding: 30% 0 20% 0;
         }
 
         .intro {
@@ -233,7 +238,7 @@
         }
 
         .logo-links {
-            margin: 7% 0;
+            margin: 12% 0;
             height: 120px;
         }
 
@@ -248,6 +253,10 @@
             height: 50px;
             width: 50px;
         }
+
+        #submit {
+            margin: 1%;
+        }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
@@ -257,7 +266,11 @@
         }
 
         .logo-links {
-            margin: 10% 0;
+            margin: 12% 0;
+        }
+
+        #submit {
+            margin: 1%;
         }
     }
 

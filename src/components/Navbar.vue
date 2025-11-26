@@ -13,6 +13,7 @@
                 <li @click="$emit('scroll-to', 'home')">Home</li>
                 <li @click="$emit('scroll-to', 'about')">About</li>
                 <li @click="$emit('scroll-to', 'projects')">Projects</li>
+                <li @click="$emit('scroll-to', 'services')">Services</li>
                 <li @click="$emit('scroll-to', 'contact')">Contact</li>
             </ul>
         </nav>
@@ -37,6 +38,9 @@
         font-size: 15px;
         width: 75%;
         padding-left: 1%;
+        margin: 0;
+        align-items: center;
+        height: 50%;
     }
 
     nav {
@@ -47,7 +51,8 @@
         display: flex;
         list-style-type: none;
         justify-content: space-between;
-        padding: 6% 0;
+        padding: 5% 0;
+        gap: 5px;
     }
 
     img {
@@ -59,14 +64,14 @@
 
     li {
         color: #D9D9D9;
-        font-size: 16px;
+        font-size: 13px;
         background: none;
         border: none;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         cursor: pointer;
-        padding: 0 2%;
-        padding-right: 1%;
+        padding: 0 5%;
+        padding-right: 0%;
     }
 
      /* Extra small devices (phones, 600px and down) */
@@ -88,12 +93,21 @@
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 601px) and (max-width: 767px) {
+        .nav-title {
+            font-size: 14px;
+            width: 43%;
+        }
+        
         img {
-        padding-top: 2.5%;  
+        padding-top: 1.5%;  
         }
 
         nav {
-            padding-right: 3%;
+            padding-right: 8%;
+        }
+
+        li {
+            padding: 0 2%;
         }
     }
 
@@ -104,8 +118,8 @@
             padding-left: 2%;
         }
 
-        nav {
-            padding-right: 5%;
+        .nav-title {
+            width: 50%;
         }
     }
 
@@ -115,8 +129,12 @@
             padding-top: 1.5%;
         }
 
+        .nav-title {
+            width: 55%;
+        }
+
         nav {
-            padding-right: 7%;
+            /* padding-right: 7%; */
         }
     }
 
