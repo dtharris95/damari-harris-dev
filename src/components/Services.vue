@@ -9,22 +9,26 @@
             <p class="services-text">As a freelance developer, I offer several services to help you create and maintain a user-friendly website that reflects your brand.</p>
             <div class="services">
                 <div class="service-block">
-                <img src="@/assets/code.png"></img>
+                    <!-- Icon provided by https://icons8.com/ -->
+                    <img src="@/assets/code.png" alt="Image of a programming closing tag"></img>
                     <h2>Custom Website Development</h2>
                     <p>Responsive sites using React, Vue, WordPress, built from scratch for your specific needs.</p>
                 </div>
                 <div class="service-block">
-                    <img src="@/assets/wordpress.png"></img>
+                    <!-- Icon provided by https://icons8.com/ -->
+                    <img src="@/assets/wordpress.png" alt="Image of WordPress logo"></img>
                     <h2>WordPress Development</h2>
                     <p>Elementor, plug-ins, custom themes, site customization.</p>
                 </div>
                 <div class="service-block">
-                    <img src="@/assets/settings.png"></img>
+                    <!-- Icon provided by https://icons8.com/ -->
+                    <img src="@/assets/settings.png" alt="Image of a gear to indicate settings to represent website maintenance"></img>
                     <h2>Website Maintenance & Optimization</h2>
                     <p>Bug fixing, accessibility friendly, speed optimizing.</p>
                 </div>
                 <div class="service-block">
-                    <img src="@/assets/hosting.png"></img>
+                    <!-- Icon provided by https://icons8.com/ -->
+                    <img src="@/assets/hosting.png" alt="Image of computer screen with a server, representing website deployment and hosting"></img>
                     <h2>Deployment & Hosting</h2>
                     <p>Deploying websites on DigitalOcean, Netlify.</p>
                 </div>

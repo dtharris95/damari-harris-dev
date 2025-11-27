@@ -1,5 +1,8 @@
 <script setup>
-
+    window.onload = function() {
+        // Reset the form fields when the page loads
+        document.getElementById("form").reset();
+    };
 </script>
 
 <template>
@@ -11,24 +14,26 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-info-row">
-                        <img src="@/assets/email-img.png"></img>
+                        <!-- Icon provided by https://icons8.com/ -->
+                        <img src="@/assets/email-img.png" alt="E-mail icon"></img>
                         <h2>E-mail</h2>
-                        <!-- <p>Full-Time: dtharris95@gmail.com</p> -->
                         <p>dharris.webdev@gmail.com</p>
                     </div>
                     <div class="contact-info-row">
-                        <img src="@/assets/location-img.png"></img>
+                        <!-- Icon provided by https://icons8.com/ -->
+                        <img src="@/assets/location-img.png" alt="Location icon"></img>
                         <h2>Location</h2>
                         <p>Cleveland, OH</p>
                     </div>
                     <div class="contact-info-row">
-                        <img src="@/assets/briefcase-img.png"></img>
+                        <!-- Icon provided by https://icons8.com/ -->
+                        <img src="@/assets/briefcase-img.png" alt="Briefcase icon representing my work availability"></img>
                         <h2>Availability</h2>
                         <p>Full-time & Freelance</p>
                     </div>
                 </div>
-                <div class="form">
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="contact-form">
+                    <form id="form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="4abbf63d-8fbb-4a37-8056-137fe4582bd9">
                         <div class="form-row">
                             <label>Name</label>
@@ -39,10 +44,15 @@
                             <input type="text" id="email" class="contact-inputs" name="email" placeholder="Enter e-mail..." required />
                         </div>
                         <div class="form-row">
+                            <label>Subject</label>
+                            <input type="text" id="subject" class="contact-inputs" name="subject" placeholder="Enter subject..." required />
+                        </div>
+                        <div class="form-row">
                             <label>Message</label>
                             <textarea id="message" class="contact-inputs" name="message" placeholder="Enter message..." required ></textarea>
                             <button type="submit" id="submit">SUBMIT</button>
                         </div>
+                        <div id="result"></div>
                     </form>
                 </div>
             </div>
@@ -70,7 +80,7 @@
         background-color: #414B3B;
         color: #D9D9D9;
         border-radius: 5px;
-        padding: 0;
+        padding: 10% 0;
         margin: 0 12%;
     }
 
@@ -91,7 +101,7 @@
         padding: 2% 15%;
     }
 
-    form {
+    .contact-form {
         background-color: #414B3B;
         color: #D9D9D9;
         border: 15px #414B3B solid;
@@ -116,7 +126,7 @@
         height: 250px;
     }
 
-    #name, #email, #message {
+    #name, #email, #subject, #message {
         padding: 10px;
         margin: 5px 0;
     }
@@ -167,7 +177,7 @@
             padding: 0 8%;
         }
 
-        form {
+        .contact-form {
             margin: 0 5%;
         }
 
@@ -205,7 +215,7 @@
             margin: 0 5%;
         }
 
-        form {
+        .contact-form {
             margin: 10% 12%;
         }
     }
@@ -225,7 +235,7 @@
             padding: 1%;
         }
 
-        form {
+        .contact-form {
             width: 84%;
         }
     }
@@ -251,7 +261,7 @@
             justify-content: center;
         }
 
-        form {
+        .contact-form {
             margin: 0;
             width: 84%;
         }
@@ -264,7 +274,7 @@
             margin: 0;
         }
 
-        form {
+        .contact-form {
             width: 86%;
         }
     } 

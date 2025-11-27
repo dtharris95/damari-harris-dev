@@ -10,9 +10,10 @@
         <!-- HARRIS KITCHEN TABLE -->
         <div class="projects-container">
             <div class="project">
-                <a class="zoom-in" href="https://harriskitchentable.com" target="_blank"><img src="@/assets/HKTIcon.webp" alt="Image of my website, Harris Kitchen Table"></img></a>
+                <a class="zoom-in" href="" target="_blank"></a>
+                <img src="@/assets/HKTIcon.webp" alt="Image of my website, Harris Kitchen Table"></img>
                 <div class="project-info">
-                    <h2>Harris Kitchen Table</h2>
+                    <h2>Harris Kitchen Table (COMING SOON)</h2>
                     <p>Full-stack template website serving as proof-of-concept for potential freelance restaurant clients.</p>
                     <p><i>React | JavaScript | HTML | CSS | PocketBase</i></p>
                 </div>
@@ -70,7 +71,7 @@
     }
 
     .zoom-in:hover {
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     hr {
@@ -79,7 +80,6 @@
 
     #hinge-img {
         height: 150px;
-        /* width: 330px; */
     }
 
     /* Extra small devices (phones, 600px and down) */

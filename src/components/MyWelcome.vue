@@ -22,6 +22,7 @@
 <template>
     <div class="welcome-wrapper">
         <div class="logo-links">
+            <!-- Icons provided by https://icons8.com/ -->
             <a href="https://linkedin.com/in/damariharris" target="_blank"><img id="linkedin-logo" src="@/assets/linkedin.png" alt="linkedin logo"/></a>
             <a href="https://github.com/dtharris95" target="_blank"><img id="github-logo" src="@/assets/github.png" alt="github logo" /></a>
         </div>
@@ -176,7 +177,7 @@
         }
 
         #submit {
-            padding: 10px 45px;
+            padding: 10px 40px;
             margin: 1%;
         }
     }
