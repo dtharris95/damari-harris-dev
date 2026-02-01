@@ -7,31 +7,31 @@
         <div>
             <h1 class="projects-heading">PROJECTS</h1><hr>
         </div>
-        <!-- HARRIS KITCHEN TABLE -->
+
         <div class="projects-container">
+        <!-- HINGE TO HARRIS -->
+            <div class="project">
+                <a href="https://hingetoharris.com/demo" target="_blank"><img id="project-img" src="@/assets/hinge-to-harris-crop.webp" alt="Image of my wedding website, titled Hinge to Harris" ></img></a>
+                <div class="project-info">
+                    <h2>Hinge to Harris</h2>
+                    <p>​Demo version of what will become my wedding website with details including the date, location, a form to RSVP, and details about the couple.​</p>
+                    <p><i>WordPress | ouRSVP</i></p>
+                </div>
+            </div>
+            <!-- HARRIS KITCHEN TABLE -->
             <div class="project">
                 <a class="zoom-in" href="" target="_blank"></a>
-                <img src="@/assets/HKTIcon.webp" alt="Image of my website, Harris Kitchen Table"></img>
+                <img id="project-img" src="@/assets/hkt-site-crop.webp" alt="Image of my website, Harris Kitchen Table"></img>
                 <div class="project-info">
                     <h2>Harris Kitchen Table (COMING SOON)</h2>
                     <p>Full-stack template website serving as proof-of-concept for potential freelance restaurant clients.</p>
                     <p><i>React | JavaScript | HTML | CSS | PocketBase</i></p>
                 </div>
             </div>
-            <!-- HINGE TO HARRIS -->
-            <div class="project">
-                <a></a>
-                <img id="hinge-img" src="@/assets/hinge-to-harris.webp" alt="Image of my wedding website, titled Hinge to Harris"></img>
-                <div class="project-info">
-                    <h2>Hinge to Harris (COMING SOON)</h2>
-                    <p>​My wedding website with details including the date, location, a form to RSVP, and a link to the registry, and details about the couple.​</p>
-                    <p><i>WordPress | ouRSVP</i></p>
-                </div>
-            </div>
             <!-- CITY VETERINARY HOSPITAL -->
             <div class="project">
                 <a></a>
-                <img id="city-vet" src="@/assets/city-vet-icon.webp" alt="Fictional logo for my project, City Veterinary Hospital"></img>
+                <img id="project-img" src="@/assets/city-vet-crop.webp" alt="Fictional logo for my project, City Veterinary Hospital"></img>
                 <div class="project-info">
                     <h2>City Veterinary Hospital (COMING SOON)</h2>
                     <p>Template veterinarian website serving as proof-of-concept for potential veterinarian clinic clients.</p>
@@ -78,8 +78,9 @@
         border: 2px solid #414B3B;
     }
 
-    #hinge-img {
+    #project-img {
         height: 150px;
+        /* width: 350px; */
     }
 
     /* Extra small devices (phones, 600px and down) */
