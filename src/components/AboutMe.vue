@@ -11,8 +11,8 @@
                 <p class="about-text">Originally from Columbus, OH, in 2023 I earned my Associate of Applied  Sciences in Computer Science from Columbus State Community College,  majoring in Web Development.</p>
                     <p class="about-text">Now based in Cleveland, OH, I have spent the last six years thriving in my role at Amazon and am now excited to embark on my next chapter in Web Development.</p>
                     <p class="about-text">I’m open to job opportunities where I can learn, grow, and collaborate, all while making a meaningful impact.</p>
-                    <p class="about-text">Feel free to connect with me on <a id="linkedin-link" href="https://linkedin.com/in/damariharris" target="_blank"><u>LinkedIn</u></a>! If you have a job opportunity for me that you feel matches my skill set, please don't hesitate to reach out.</p>
-                    <button @click="$emit('scroll-to', 'contact')" type="submit" id="submit">CONTACT</button>
+                    <p class="about-text">Feel free to connect with me on <a id="linkedin-link" href="https://linkedin.com/in/damariharris" target="_blank" aria-label="View LinkedIn profile"><u>LinkedIn</u></a>! If you have a job opportunity for me that you feel matches my skill set, please don't hesitate to reach out.</p>
+                    <button @click="$emit('scroll-to', 'contact')" type="submit" id="submit" aria-label="Jump to contact section of page">CONTACT</button>
             </div>
             <div class="skills-container">
                 <h2>Skills</h2>

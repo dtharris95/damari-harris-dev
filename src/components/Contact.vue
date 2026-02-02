@@ -50,7 +50,7 @@
                         <div class="form-row">
                             <label>Message</label>
                             <textarea id="message" class="contact-inputs" name="message" placeholder="Enter message..." required ></textarea>
-                            <button type="submit" id="submit">SUBMIT</button>
+                            <button type="submit" id="submit" aria-label="Submit button for contact form">SUBMIT</button>
                         </div>
                         <div id="result"></div>
                     </form>
