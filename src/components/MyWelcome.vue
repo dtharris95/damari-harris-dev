@@ -29,8 +29,8 @@
         <div class="hello-world-container">
             <h1 class="intro">HELLO WORLD, I'M DAMARI</h1>
             <p class="intro-text">I'm a front-end Web Developer who enjoys bringing ideas to life! I'm eager to apply my skills and grow continuously through real-world opportunities.</p>
-            <button @click="$emit('scroll-to', 'projects')" type="submit" id="submit">PROJECTS</button>
-            <button @click="$emit('scroll-to', 'services')" type="submit" id="submit">SERVICES</button>
+            <button @click="$emit('scroll-to', 'projects')" type="submit" id="submit" aria-label="Jump to projects section">PROJECTS</button>
+            <button @click="$emit('scroll-to', 'services')" type="submit" id="submit" aria-label="Jump to services section">SERVICES</button>
         </div>
         <!-- Logos placement on mobile devices -->
         <div class="logo-links-responsive">
@@ -42,7 +42,7 @@
             <!-- </div> -->
         </div>
         <div class="top-btn-container">
-            <button v-if="isVisible" @click="$emit('scroll-to', 'home')" type="submit" class="top-btn">Top ^</button>
+            <button v-if="isVisible" @click="$emit('scroll-to', 'home')" type="submit" class="top-btn"  aria-label="Return to top of webpage">Top ^</button>
         </div>
     </div>
 </template>
