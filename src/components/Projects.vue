@@ -89,8 +89,14 @@
             font-size: 28px;
         }
 
-        .projects-container, .project {
+        .projects-container {
             display: block;
+            padding: 0 5%;
+        }
+
+        .project {
+            display: block;
+            margin: 0;
         }
 
         .project-info {
