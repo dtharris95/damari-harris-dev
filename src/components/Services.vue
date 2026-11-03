@@ -43,6 +43,8 @@
         padding: 10% 5%;
         box-shadow: 0px -10px 5px gray,
         0 10px 5px gray;
+        position: relative;
+        z-index: 1;
     }
 
     .services-heading {

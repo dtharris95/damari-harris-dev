@@ -8,8 +8,10 @@
             <h1 class="projects-heading">PROJECTS</h1><hr>
         </div>
 
+        <!-- MY LIST OF PROJECTS -->
         <div class="projects-container">
-        <!-- HINGE TO HARRIS -->
+            <!-- <div class="project-soon"><h2>(Coming Soon)</h2></div> -->
+            <!-- HINGE TO HARRIS -->
             <div class="project">
                 <a href="https://hingetoharris.com/demo" target="_blank"><img id="project-img" src="@/assets/hinge-to-harris-crop.webp" alt="Image of my wedding website, titled Hinge to Harris" ></img></a>
                 <div class="project-info">
@@ -29,7 +31,7 @@
                 </div>
             </div>
             <!-- CITY VETERINARY HOSPITAL -->
-            <div class="project">
+            <!-- <div class="project">
                 <a></a>
                 <img id="project-img" src="@/assets/city-vet-crop.webp" alt="Fictional logo for my project, City Veterinary Hospital"></img>
                 <div class="project-info">
@@ -37,7 +39,7 @@
                     <p>Template veterinarian website serving as proof-of-concept for potential veterinarian clinic clients.</p>
                     <p><i>SvelteKit | JavaScript | HTML | CSS</i></p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -51,6 +53,12 @@
         text-align: center;
         color: #414B3B;
         font-size: 48px;
+    }
+
+    .project-soon {
+        text-align: center;
+        color: #414B3B;
+        font-size: 18px;
     }
 
     .projects-container {

@@ -28,6 +28,7 @@
         display: flex;
         /* border-bottom: 2px #D9D9D9 solid; */
         position: fixed;
+        z-index: 1000;
         width: 100vw;
         color: #D9D9D9;
         background-color: #414B3B;
