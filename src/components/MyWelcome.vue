@@ -74,6 +74,7 @@
 
     .top-btn {
         position: fixed;
+        z-index: 2;
         right: 3%;
         bottom: 3%;
         padding: 15px 5px;

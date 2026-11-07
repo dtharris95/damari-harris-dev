@@ -40,7 +40,7 @@
                     <div class="contact-info-row">
                         <!-- Icon provided by https://icons8.com/ -->
                         <img src="@/assets/email-img.png" alt="E-mail icon"></img>
-                        <h2>Freelance</h2>
+                        <h2>Email</h2>
                         <p>dharris.webdev@gmail.com</p>
                         <!-- <h2>Employment</h2>
                         <p>dtharris95@gmail.com</p> -->
@@ -316,7 +316,9 @@
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) and (max-width: 991px) {
         .contact-container {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
         }
         
         .contact-text {
@@ -324,12 +326,14 @@
         }
 
         div.contact-info {
-            margin: 5% 1%;
+            margin: 0;
             padding-inline: 1%;
         }
 
         .contact-form {
-            width: 84%;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0;
         }
     }
 
